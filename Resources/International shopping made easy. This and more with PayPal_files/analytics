@@ -1,0 +1,30 @@
+
+function piResponse() {
+		piSetCookie('visitor_id925803', '1540656667', 3650);
+			piSetCookie('visitor_id925803-hash', 'ecde71ba67aead2a06caf6428ecf2f7c61b0c2ddf86fc791f7d94623a40af4ce3ca24f7c43221b266f38424e9c52434c3a647a07', 3650);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && true)) {
+		var analytics_link = document.location.protocol + "//" + "pypd.paypal-mktg.com/analytics?";
+		pi.tracker.visitor_id='1540656667';
+
+				pi.tracker.visitor_id_sign='ecde71ba67aead2a06caf6428ecf2f7c61b0c2ddf86fc791f7d94623a40af4ce3ca24f7c43221b266f38424e9c52434c3a647a07';
+		
+				pi.tracker.campaign_id='5717';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + pi.tracker[property];
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	}
+piResponse();
+
+
+
+

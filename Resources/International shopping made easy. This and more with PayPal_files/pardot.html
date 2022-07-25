@@ -1,0 +1,111 @@
+
+<!-- saved from url=(0098)https://www.paypal-mktg.com/pardot/pardot.html#referrer=https://www.paypal.com/in/webapps/mpp/home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="noindex">
+    <script type="text/javascript" src="./pd.js.download"></script><script id="pardot" type="text/javascript">
+      (function(){
+        try {
+          var _targetOrigin = "https://www.paypal.com";
+          window.parent.postMessage("PARDOT_IFRAME_READY", _targetOrigin);
+          // Event handler for 'postMessage'
+          function handleMessage(e) {
+            if (e.origin === _targetOrigin) {
+              var data = JSON.parse(e.data);
+              switch (data.action) {
+                case 'PARDOT_JS_INIT':
+                  // Set up datalayer for control tag using data sent in postMessage
+                  var laDataLayer = data.laDataLayer || {};
+                  window.laDataLayer = laDataLayer;
+                  var consentOptOut = laDataLayer.consentOptOut;
+                  document.title = laDataLayer.title;
+                  if (laDataLayer.gclid) {
+                    function getParam(p) {
+                      try {
+                        var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.hash);
+                        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+                      } catch(err){
+                        return '';
+                      };
+                    }
+
+                    function getExpiryRecord(value) {
+                      var date = new Date();
+                      var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
+                      date.setTime(date.getTime() + expiryPeriod);
+                      var expiryDate = date.toUTCString();
+                      return {
+                        value: value,
+                        expiryDate: expiryDate
+                      };
+                    }
+
+                    function setGclidCookie() {
+                      var gclidParam = getParam('gclid');
+                      var gclidRecord = null;
+                      var gclsrcParam = getParam('gclsrc');
+                      var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+                      if (gclidParam && isGclsrcValid) {
+                        gclidRecord = getExpiryRecord(gclidParam);
+                        document.cookie = 'gclid=' + gclidRecord.value + '; expires=' + gclidRecord.expiryDate + '; Domain=' + '.paypal-mktg.com' + '; path=/; SameSite=None; Secure';
+                      }
+                    }
+                    setGclidCookie();
+                  }
+                  if(!consentOptOut) {
+                    // Salesforce Pardot Tracking for PayPal
+                    piAId = data.piAId;
+                    piCId = data.piCId;
+                    piHostname = data.piHostname || 'pi.pardot.com';
+                    window.pi = window.pi || {};
+                    pi.tracker = pi.tracker || {};
+                    if (laDataLayer.url) {
+                      pi.tracker.url = laDataLayer.url;
+                    }
+                    if (laDataLayer.tsrc) {
+                      pi.tracker.referrer = laDataLayer.tsrc;
+                    }
+                    if (laDataLayer.pardot) {
+                      pi.tracker.visitor_id = laDataLayer.pardot.visitor_id;
+                      pi.tracker.visitor_id_sign = laDataLayer.pardot.visitor_id_sign;
+                      pi.tracker.pi_opt_in = laDataLayer.pardot.pi_opt_in;
+                    } else {
+                      var syncHandler = setInterval(function () {
+                        if (pi.tracker.visitor_id) {
+                          clearInterval(syncHandler);
+                          var pd_visit_obj = {
+                            visitor_id: pi.tracker.visitor_id,
+                            visitor_id_sign: pi.tracker.visitor_id_sign,
+                            pi_opt_in: pi.tracker.pi_opt_in
+                          };
+                          window.parent.postMessage(JSON.stringify(pd_visit_obj), _targetOrigin);
+                        }
+                      }, 20);
+                    }
+                    (function () {
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    //s.src = ("https:" == document.location.protocol ? "https://pi" : "http://cdn") + ".pardot.com/pd.js";
+                    s.src = "https://www.paypal-mktg.com/pardot/pd.js";
+                    var c = document.getElementsByTagName("script")[0]; c.parentNode.insertBefore(s, c);
+                    })();
+                  }
+                  break;
+              }
+            }
+          }
+          // Assign handler to message event
+          if (window.addEventListener) {
+              window.addEventListener('message', handleMessage, false);
+          } else if (window.attachEvent) { // ie8
+              window.attachEvent('onmessage', handleMessage);
+          }
+        } catch(err){};
+      })();
+    </script>
+  <title>International shopping made easy. This and more with PayPal</title><script type="text/javascript" src="./analytics"></script><script type="text/javascript" src="./analytics(1)"></script></head>
+  <body>
+
+</body></html>

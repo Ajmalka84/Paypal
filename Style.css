@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+}
+.headerdiv{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: white;
+}
+.container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.Logo{
+    height: 45px;
+    width:139px;
+    position: absolute;
+    left: 210px;
+    top: 14px;
+}
+.innerdiv{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+
+}
+
+.button1{
+    width: 85px;
+    height: 35px;
+    border-radius: 22px;
+    position: absolute;
+    top: 20px;
+    right: 300px;
+    border: blue solid 1px;
+}
+.button1:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: blue solid 1px;
+
+}
+.homediv{
+    background-image: url(./Resources/home\ image1.png);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 730px;
+    background-position: center;
+    align-items: center;
+}
+.headinghome{
+    width: 900px;
+    height: 420px;
+    text-align: center;
+}
+.h1{
+    font-size: 40px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 58px;
+    font-weight: 100;
+}
+.button2{
+    width: 321px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: hidden;
+    color: #0d3685;
+    font-size: 14px ;
+    font-weight: bolder;
+}
+.header{
+    width: 100%;
+    height: 105px;
+    margin: 0;
+    background-color: #02387b;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    color:#ffffff;
+    font-size:  x-large;
+}
+.button3{
+    width: 140px;
+    height: 33px;
+    border-radius: 22px;
+    border-color:white;
+    color: #02387b;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.header2{
+   margin: 0px;
+   width: 100%;
+   height: 440px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.box1{
+    width: 600px;
+    height: 360px;
+}
+#box1h1{
+    color: #00a8ea;
+    padding-top: 20px;
+}
+.para2{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    line-height: 25.6px;
+}
+.image1{
+    width: 352px;
+    height: 352px;
+}
+#header3{
+    height: 330px;
+    background-color:#f5f7fa ;
+}
+.box2{
+    width: 1120px;
+    height: 210px; 
+}
+.box2div{
+    width: 100%;
+    height: 38%;
+    text-align: center;
+}
+.box2div1{
+    width: 100%;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header3{
+    margin: 0;
+    background-color: #00a8ea;
+    width: 100%;
+    height: 400px;
+}
+.header3div{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header3div1{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header3divdiv{
+    width: 935px;
+    height: 200px;
+}
+.containerdiv{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerdiv1{
+    width: 1100px;
+    height: 130px;
+}
+.header4{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.header4div{
+    width: 1190px;
+    height: 195px;
+    
+}
+.div1{
+    width: 100%;
+    height: 20%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.div2{
+    width: 100%;
+    height: 20%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.div3{
+    width: 100%;
+    height: 60%;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.a{
+    color:#2c2e2f;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.a:hover{
+    text-decoration: underline;
+}
+.number{
+    width: 606px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+.numberdiv{
+    width: 10%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #f5f7fa;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
